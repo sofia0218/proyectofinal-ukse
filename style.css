@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: blueviolet;
+}
+nav ul li a:hover {
+  color: black;
+}
+
+h1 {
+  color: blue;
+}
+
+.info-button {
+  background-color: rgb(200, 0, 53);
+}
+.info-button:hover {
+  color: rgb(0, 0, 0);
+}
+
+footer p {
+  color: red;
+  font-size: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 250px;
+  height: 250px;
+}
+.card h2 {
+  font-size: 16px;
+}
+.card p {
+  margin: 8px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
+h1  { 
+    color:fuchsia
+     }
+h1   { 
+    background-image:linear-gradient(to right,white,blue) 
+    }
+
+ @keyframes efecto-custom  {
+    0%  {width: 100px;}
+    25% {width: 150px;}
+    50% {width: 200px; background-color: yellow }
+    75% {width: 300px;}
+    100% {width: 400px; background-color: green }
+ }
+ 
+
+
+
+article { 
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    animation-name: efecto-custom;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 2s;
+
+}
+@keyframes card-flip {
+ 25% {transform: rotateY(90deg)}
+ 50% {transform: rotateY(180deg);}
+ 75% {transform: rotateY(270deg);}
+ 100% {transform: rotateY(360deg);}
+}
+
+
+.card { 
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+.card:hover {
+    animation-name: card-flip;
+    animation-iteration-count: 3s;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    animation-delay: 0.3s;
+}    

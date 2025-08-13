@@ -1,0 +1,11 @@
+h1 {
+    color:blue;
+    }
+
+
+.info-button {
+    background-color: rgb(200, 0, 53);
+    &:hover {
+        color: rgb(0, 0, 0);
+        }
+}
